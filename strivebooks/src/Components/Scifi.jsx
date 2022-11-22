@@ -1,11 +1,11 @@
 import { Card, Container, Row, Col, Button } from 'react-bootstrap'
-import fantasy from '../Data/fantasy.json'
+import scifi from '../Data/scifi.json'
 
-const LatestReleases = () => (
-  <Container>
+const Scifi = () => (
+  <Container className="w-100">
     <Row>
-      {fantasy.map((book) => (
-        <Col className="mb-3" lg={4}>
+      {scifi.map((book) => (
+        <Col className="w-100 mt-3" lg={4}>
           <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={book.img} />
             <Card.Body>
@@ -20,4 +20,4 @@ const LatestReleases = () => (
     </Row>
   </Container>
 )
-export default LatestReleases
+export default Scifi

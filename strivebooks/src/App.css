@@ -37,6 +37,10 @@
   }
 }
 
+.jumbotron {
+  background-color: #343a40;
+}
+
 .footer {
   position: fixed;
   left: 0;

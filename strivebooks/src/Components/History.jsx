@@ -5,7 +5,7 @@ const History = () => (
   <Container className="w-100">
     <Row>
       {history.map((book) => (
-        <Col className="w-100 mt-3" lg={4}>
+        <Col className="w-100 mt-3" lg={4} key={book.asin}>
           <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={book.img} />
             <Card.Body>
